@@ -1,0 +1,79 @@
+.footer {
+  margin-top: 20px;
+  bottom: 0;
+  width: 100%;
+  background-color: white; /* Change as needed */
+  padding: 20px 0;
+  text-align: center;
+  /* position: fixed; */
+  color: black;
+  font-weight: bolder;
+  box-shadow: 1px 1px 5px 1px rgb(201, 197, 197);
+  margin-bottom: 0px;
+}
+.container {
+  margin-top: 10px;
+}
+.contactus {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.followus {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.us {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.socialmedialogos {
+  width: 30px;
+  height: 30px;
+  border-radius: 40px;
+}
+.followus a {
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 10px;
+}
+.socialtext {
+  margin-left: 10px;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+.totalfooter {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: center;
+}
+.uparrow {
+  margin-top: 10px;
+}
+.arrow {
+  text-decoration: none;
+  color: black;
+}
+
+/* mobile device styles */
+@media only screen and (max-width: 500px) {
+  .totalfooter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+  .us {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,204 @@
+.singlemovie {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.cardheader {
+  background-color: rgb(184, 225, 225);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.cardbody {
+  background-color: whitesmoke;
+}
+.gr {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+.image {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+}
+.moviedetails {
+  display: flex;
+  justify-content: space-between;
+}
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+.title {
+  margin-top: 10px;
+  margin-left: 1px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.duration {
+  margin-top: 10px;
+  margin-left: 1px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.date {
+  margin-top: 10px;
+  margin-left: 1px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+span {
+  color: red;
+  font-weight: bolder;
+}
+.photo {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.cardfooter {
+  background-color: rgb(179, 241, 222);
+}
+.reviewimage {
+  width: 90%;
+  height: 350px;
+  border-radius: 10px;
+}
+.movieinfo {
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+  margin-left: 50px;
+  font-weight: bolder;
+  text-align: center;
+}
+/* CSS */
+.movieinfo ul {
+  list-style: none;
+  padding: 0; /* Remove default padding */
+}
+
+.movieinfo li {
+  text-align: justify;
+  margin-bottom: 10px; /* Adjust margin between list items if needed */
+}
+
+/* Optional: To customize bullet point style */
+.movieinfo li::before {
+  content: "•";
+  margin-right: 5px;
+}
+
+.span2 {
+  color: black;
+  font-weight: lighter;
+}
+
+.reviewinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+/* styles for mobile phone */
+@media only screen and (max-width: 500px) {
+  /* card section up to body */
+  .cardheader {
+    background-color: rgb(220, 165, 26);
+    display: flex;
+    /* justify-content: space-between; */
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 6px;
+  }
+  .cardbody {
+    background-color: rgb(228, 213, 175);
+  }
+  .cardfooter {
+    background-color: rgb(235, 223, 192);
+  }
+  .moviedetails {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .image {
+    width: 100%;
+    height: 130px;
+    border-radius: 5px;
+  }
+  .title {
+    margin-top: 5px;
+    margin-left: 1px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-size: small;
+  }
+  .duration {
+    margin-left: 1px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-size: small;
+  }
+  .date {
+    margin-left: 1px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-size: small;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+  }
+  .reviewbut {
+    width: 100%;
+  }
+  .trailerbut {
+    width: 100%;
+  }
+  /* view review section */
+  .photo {
+    display: flex;
+    justify-content: center;
+  }
+  .reviewimage {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+  }
+  .movieinfo {
+    display: flex;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 10px;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .movieinfo ul {
+    list-style: none;
+  }
+
+  .movieinfo li {
+    text-align: left;
+    margin-bottom: 5px; /* Adjust margin between list items if needed */
+  }
+
+  /* Optional: To customize bullet point style */
+  .movieinfo li::before {
+    content: none;
+  }
+  .reviewinfo {
+    margin-top: 5px;
+    margin-left: 10px;
+    text-align: justify;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
