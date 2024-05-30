@@ -11,7 +11,9 @@ function App() {
 
   const getData = async () => {
     try {
-      const response = await fetch("http://localhost:8080/movies");
+      const response = await fetch(
+        "https://moviereviews-1.onrender.com/movies"
+      );
       if (!response.ok) {
         throw new Error("Failed to fetch movies");
       }

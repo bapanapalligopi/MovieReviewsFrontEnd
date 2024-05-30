@@ -11,7 +11,7 @@ export default function SingleMovie({ movie }) {
 
   return (
     <div className={styles.singlemovie}>
-      <div className="card">
+      <div className={`card ${styles.card}`}>
         <div className={`card-header ${styles.cardheader}`}>
           <div>
             Movie Name: <span> {movie.title}</span>

@@ -12,7 +12,9 @@ export default function Navigation({ setMovies, movies }) {
   const changeData = async (e) => {
     const query = e.target.innerHTML;
     try {
-      const response = await fetch(`http://localhost:8080/sort?by=${query}`);
+      const response = await fetch(
+        `https://moviereviews-1.onrender.com/sort?by=${query}`
+      );
       if (!response.ok) {
         throw new Error("Failed to fetch movies");
       }
@@ -41,13 +43,16 @@ export default function Navigation({ setMovies, movies }) {
     for (let i = 0; i < searchRequest.length; i++) {
       let requestBody = JSON.stringify(searchRequest[i]);
       try {
-        const response = await fetch("http://localhost:8080/search", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: requestBody,
-        });
+        const response = await fetch(
+          "https://moviereviews-1.onrender.com/search",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: requestBody,
+          }
+        );
         if (response.ok) {
           const data = await response.json();
           if (data.length !== 0) {
@@ -70,7 +75,9 @@ export default function Navigation({ setMovies, movies }) {
   };
   const getTodayMovies = async (e) => {
     try {
-      const response = await fetch("http://localhost:8080/moviestoday");
+      const response = await fetch(
+        "https://moviereviews-1.onrender.com/moviestoday"
+      );
       if (response.ok) {
         const moviesToday = await response.json();
         setMovies(moviesToday);
@@ -81,7 +88,9 @@ export default function Navigation({ setMovies, movies }) {
   };
   const getAllMovies = async (e) => {
     try {
-      const response = await fetch("http://localhost:8080/movies");
+      const response = await fetch(
+        "https://moviereviews-1.onrender.com/movies"
+      );
       if (!response.ok) {
         throw new Error("Failed to fetch movies");
       }

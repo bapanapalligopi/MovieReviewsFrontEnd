@@ -2,16 +2,22 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.card {
+  /* border: 2px solid #3c3c3c; */
+}
 .cardheader {
   background-color: rgb(184, 225, 225);
+  /* background-color: #1e1e1e; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   text-transform: uppercase;
   font-weight: bolder;
+  /* color: white; */
 }
 .cardbody {
   background-color: whitesmoke;
+  /* background-color: #3c3c3c; */
 }
 .gr {
   display: flex;
@@ -52,7 +58,8 @@
 }
 span {
   color: red;
-  font-weight: bolder;
+  /* color: white; */
+  font-weight: 500;
 }
 .photo {
   margin-top: 10px;
@@ -110,7 +117,7 @@ span {
 @media only screen and (max-width: 500px) {
   /* card section up to body */
   .cardheader {
-    background-color: rgb(220, 165, 26);
+    background-color: rgb(184, 225, 225);
     display: flex;
     /* justify-content: space-between; */
     text-transform: uppercase;
@@ -118,10 +125,10 @@ span {
     font-size: 6px;
   }
   .cardbody {
-    background-color: rgb(228, 213, 175);
+    background-color: whitesmoke;
   }
   .cardfooter {
-    background-color: rgb(235, 223, 192);
+    background-color: rgb(179, 241, 222);
   }
   .moviedetails {
     display: flex;
